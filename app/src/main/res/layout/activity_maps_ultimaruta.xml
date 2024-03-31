@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/semi_transparent_color">
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="700dp"
+        android:layout_centerInParent="true"
+        android:background="#484fdd"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="ULTIMA RUTA"
+            android:textAllCaps="true"
+            android:textColor="#363DC5"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="350dp"
+            android:layout_height="440dp"
+            android:layout_marginTop="50dp" />
+
+
+        <ImageView
+            android:id="@+id/imageClose_antigua"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/corner_dialog_preguntas"
+            android:padding="2dp"
+            android:src="@drawable/cerrar_foreground"
+            app:tint="#595959" />
+
+
+        <Button
+            android:id="@+id/bt_tipo"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#5F65E6"
+            android:text="Vista" />
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/datos_de_origen"
+            android:layout_width="match_parent"
+            android:layout_marginTop="494dp"
+            android:layout_height="80dp"
+            android:background="@drawable/curve_background">
+
+
+            <ImageView
+                android:id="@+id/imageLocation_dest1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/location1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/direccion_dest1_1"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/direccion_dest1_2"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/direccion_dest1_3"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/fechas_last_origen"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#2639A5"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_punto"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="ORIGEN"
+                    android:textColor="#2E4CF8"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/datos_de_destino"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="578dp"
+            android:background="@drawable/corners_orange">
+
+
+            <ImageView
+                android:id="@+id/imageLocation_dest2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/location1" />
+
+            <LinearLayout
+                android:layout_width="281dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/direccion_dest2_1"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/direccion_dest2_2"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/direccion_dest2_3"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/fechas_last_destino"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#2639A5"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date_fecha_last"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="DESTINO"
+                    android:textColor="#2544F4"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

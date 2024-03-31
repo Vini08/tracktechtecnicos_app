@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:angle="360" android:endColor="#8D92F4"
+                        android:startColor="#8D92F4" />
+                    <stroke android:width="0dp" android:color="#000000" />
+                    <corners android:radius="63dp" />
+                    <padding android:bottom="1dp" android:left="1dp" android:right="1dp" android:top="1dp" />
+                </shape>
+            </item>
+            <item android:left="0dp"  >
+                <bitmap android:gravity="right" android:src="@mipmap/drop" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

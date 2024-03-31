@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/semi_transparent_color">
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="700dp"
+        android:layout_centerInParent="true"
+        android:background="#4B64FF"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageLocationxcx"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/panicos" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="245dp"
+            android:layout_height="52dp"
+            android:background="#4B64FF"
+            android:gravity="center"
+            android:layout_marginLeft="55dp"
+            android:text="EVENTO DE PANICO"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <fragment
+            android:id="@+id/map_panic"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="350dp"
+            android:layout_height="570dp"
+            android:layout_marginTop="52dp"/>
+
+        <ImageView
+            android:id="@+id/imageClose_antigua_last"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_cardview"
+            android:padding="2dp"
+            android:src="@drawable/cerrar_foreground"
+            app:tint="#2C2C2C" />
+
+
+
+
+        <Button
+            android:id="@+id/bt_tipo"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="7dp"
+            android:textSize="10sp"
+            android:text="Vista"
+            android:backgroundTint="#2E4AF8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="576dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_rounded_top">
+
+
+            <ImageView
+                android:id="@+id/imageLocation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/location1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/imageLocation"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/direccion1"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/direccion2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/direccion3"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/date_press_panic"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#2639A5"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageLocationsds"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="17dp"
+                android:src="@drawable/compartir_ubi" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

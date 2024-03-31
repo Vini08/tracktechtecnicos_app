@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/semi_transparent_color">
+
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="682dp"
+        android:layout_centerInParent="true"
+        android:background="#ECECEC"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titulo_u_cred_comp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="LISTADO DE PANICOS "
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="#7169E1"
+        />
+
+
+    <ListView
+        android:id="@+id/listView_panicos_listado"
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="45dp"
+        android:background="#FFFFFF"
+        android:divider="#FFFFFF"
+        android:dividerHeight="4dp"
+        app:backgroundTint="#FFFFFF" />
+
+
+
+
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="610dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnDatePicker1"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:text="FECHA INICIO"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#673AB7"
+            app:layout_column="0" />
+
+        <Button
+            android:id="@+id/btnDatePicker2"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:text="FECHA FINAL"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#673AB7"
+            app:layout_column="0" />
+
+        <TextView
+            android:id="@+id/fech_inic"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#FDFDFD"
+            android:gravity="center"
+            android:text="0000-00-00"
+            android:textColor="#4B0ED6"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/fech_fin"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="38dp"
+            android:background="#FDFDFD"
+            android:gravity="center"
+            android:text="0000-00-00"
+            android:textColor="#4B0ED6"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/conteo_panicos"
+            android:layout_width="110dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="581dp"
+            android:background="#ACACAC"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#5A2EBF"
+            android:textIsSelectable="false"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textView2233"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="578dp"
+            android:background="@drawable/blue_leftcorner_bkg"
+            android:gravity="center"
+            android:text="CANTIDAD DE PANICOS"
+            android:textColor="#FFFFFF"
+            android:textIsSelectable="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_column="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

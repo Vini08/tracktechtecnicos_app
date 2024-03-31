@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/corner_dialog_preguntas">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/cabecera_dialog_pago"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="#FF6F00"
+            android:gravity="center"
+            android:text="RECIBIR PÁNICO"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/v1_wait"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="Espere unos segundos..."
+            android:textColor="@color/colorB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/data_panico_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="SE RECIBIÓ EL SIGUIENTE PÁNICO\n2023-10-08 20:19:41 "
+            android:textColor="#FF5900"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+
+        <Button
+            android:id="@+id/confirm_panico"
+            style="?android:textAppearanceSmall"
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="124dp"
+            android:drawableLeft="@drawable/check"
+            android:text="confirmar"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:backgroundTint="#9EE847" />
+
+        <Button
+            android:id="@+id/back_panic"
+            style="?android:textAppearanceSmall"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="9dp"
+            android:drawableLeft="@drawable/back"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:backgroundTint="#3F51B5" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:background="#ECECEC"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+
+            <TextView
+                android:id="@+id/fecha_label"
+                android:layout_width="255dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="4dp"
+                android:text="Fecha y hora"
+                android:textColor="#1C1C1C"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center|center_horizontal|top"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/coordena_label"
+                android:layout_width="255dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="4dp"
+                android:text="Coordenadas"
+                android:textColor="#6F76FD"
+                android:textSize="12sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_gravity="center|center_horizontal|top"
+                app:layout_row="0" />
+
+            <TextView
+            android:id="@+id/fecha_press_panico"
+            android:layout_width="255dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="4dp"
+            android:text="2023-08-01 15:13:47"
+            android:textColor="#1C1C1C"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_column="0"
+            app:layout_columnSpan="2"
+            app:layout_gravity="center|center_horizontal|top"
+            app:layout_row="0" />
+
+
+
+
+            <TextView
+                android:id="@+id/lat_press_panico"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="4dp"
+                android:text="14.0000000000"
+                android:textColor="#6F76FD"
+                android:textSize="15sp"
+                android:layout_marginTop="45dp"
+                android:textStyle="bold"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="bottom"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/long_press_panico"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="114dp"
+                android:text="-91.0000000000"
+                android:textColor="#6F76FD"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="bottom"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/producto_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textSize="2sp"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+
+            <ImageView
+                android:id="@+id/image_ir_punto"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:layout_column="3"
+                app:layout_row="0"
+                app:srcCompat="@drawable/gps_start" />
+
+            <TextView
+                android:id="@+id/ubicaion_label"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="56dp"
+                android:text="Ver ubicación"
+                android:textColor="#1C1C1C"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                app:layout_column="3"
+                app:layout_columnSpan="0"
+                app:layout_gravity="center|center_horizontal|top"
+                app:layout_row="0" />
+
+        </androidx.gridlayout.widget.GridLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

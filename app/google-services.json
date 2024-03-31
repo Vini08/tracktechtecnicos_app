@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481714414560",
+    "project_id": "tracktech-soporte",
+    "storage_bucket": "tracktech-soporte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481714414560:android:a2c46f59f1aa11fc49c185",
+        "android_client_info": {
+          "package_name": "com.example.tracktechsopt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACrE7eXeTmC6FogilmFe_MXkD8LU0GShw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
